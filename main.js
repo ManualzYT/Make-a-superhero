@@ -41,3 +41,160 @@ canvas.add(object_of_blockImage);
 });
         
 }
+
+if(keyPressed == '70')
+{
+   new_image('IronMans_Helmet.png')
+   console.log("f")   
+}
+
+if(keyPressed == '67')
+{
+   new_image('ironman_body.png')
+   console.log("c")   
+}
+
+if(keyPressed == '71')
+{
+   new_image('ironman_left_hand.png')
+   console.log("g")   
+}
+
+ if(keyPressed == '66')
+  {
+  new_image('spidermansBody.jpg');
+  console.log("b"); 
+ }
+
+ if(keyPressed == '68')
+  {
+  new_image('spiderman_face.png');
+  console.log("d"); 
+ }
+
+ if(keyPressed == '81')
+  {
+  new_image('spiderman_legs.png');
+  console.log("q"); 
+ }
+
+ if(keyPressed == '66')
+  {
+  new_image('spiderman_right_hand.png');
+  console.log("b"); 
+ }
+
+ if(keyPressed == '72')
+  {
+  new_image('hulk_legs.png');
+  console.log("h"); 
+ } 
+
+ if(keyPressed == '76')
+ {
+ new_image('hulk_face.png');
+ console.log("l"); 
+} 
+
+if(keyPressed == '82')
+{
+new_image('hulk_body.png');
+console.log("r"); 
+} 
+
+if(keyPressed == '75')
+{
+new_image('hulk_left_hand.png');
+console.log("k"); 
+} 
+
+if(keyPressed == '75')
+{
+new_image('hulk_right_hand.png');
+console.log("a"); 
+} 
+
+if(keyPressed == '84')
+{
+new_image('thor_face.png');
+console.log("t"); 
+} 
+
+if(keyPressed == '83')
+{
+new_image('thor_left_hand.png');
+console.log("s"); 
+}
+
+if(keyPressed == '80')
+{
+new_image('thor_right_hand.png');
+console.log("p"); 
+} 
+
+
+function up()
+ {
+   if(player_y >= 0)
+    {
+      player_x = player_y - 10;
+       console.log("When up arrow is pressed, x = " + player_x + " | y = " + player_y);
+      new_image();
+     } 
+   }
+
+   function down()
+   {
+      if(player_y <= 500)
+      {
+        player_y = player_y + 10;
+        console.log("When up arrow is pressed, x = " + player_x + " | y = " + player_y);
+        new_image();     
+      } 
+    }
+
+   function left() 
+   {
+     if(player_x >= 0)
+     {
+       player_x = player_x - 10;
+       console.log("When up arrow is pressed, x = " + player_x + " | y = " + rover_y);
+       new_image();       
+     } 
+   }
+
+  function right()
+  {
+    player_x = player_x + 10;
+   console.log("When up arrow is pressed, x = " + player_x + " | y = " + player_y);
+   new_image();     
+ } 
+
+if(keyPressed == '38')
+{
+   up();
+   console.log("up"); 
+}
+
+if(keyPressed == '40')
+{
+   down();
+   console.log("down")
+}
+
+if(keyPressed == '37')
+{
+   left();
+   console.log("left")
+}
+
+if(keyPressed == '39')
+{
+   right();
+   console.log("right")
+}
+
+
+
+
+
