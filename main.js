@@ -29,7 +29,7 @@ canvas.add(object_of_player);
 function new_image(get_image){
     
 fabric.Image.fromURL(get_image, function(Img){
-block_image_object = Img;
+object_of_blockImage = Img;
         
 object_of_blockImage.scaleToWidth(block_width);
 object_of_blockImage.scaleToHeight(block_height);
@@ -67,7 +67,7 @@ if(e.shiftKey == true && keyPressed == '80')
   document.getElementById("current_height").innerHTML = block_height; 
   }
 
-
+1
   if(keyPressed == '38')
   {
      up();
@@ -128,10 +128,10 @@ if(keyPressed == '71')
   console.log("q"); 
  }
 
- if(keyPressed == '66')
+ if(keyPressed == '69')
   {
   new_image('spiderman_right_hand.png');
-  console.log("b"); 
+  console.log("e"); 
  }
 
  if(keyPressed == '72')
@@ -158,7 +158,7 @@ new_image('hulk_left_hand.png');
 console.log("k"); 
 } 
 
-if(keyPressed == '75')
+if(keyPressed == '65')
 {
 new_image('hulk_right_hand.png');
 console.log("a"); 
