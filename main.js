@@ -42,6 +42,56 @@ canvas.add(object_of_blockImage);
         
 }
 
+window.addEventListener("keydown," , my_keydown)
+
+function my_keydown(e)
+{
+keyPressed = e.keyCode;
+console.log(keyPressed);   
+}
+if(e.shiftKey == true && keyPressed == '80')
+  {
+  console.log("p and shift pressed together");
+  block_width = block_width + 10;
+  block_height = block_height + 10;
+  document.getElementById("current_width").innerHTML = block_width;
+  document.getElementById("current_height").innerHTML = block_height; 
+  }
+
+  if(e.shiftKey == true && keyPressed == '77')
+  {
+  console.log("m and shift pressed together");
+  block_width = block_width - 10;
+  block_height = block_height - 10;
+  document.getElementById("current_width").innerHTML = block_width;
+  document.getElementById("current_height").innerHTML = block_height; 
+  }
+
+
+  if(keyPressed == '38')
+  {
+     up();
+     console.log("up"); 
+  }
+  
+  if(keyPressed == '40')
+  {
+     down();
+     console.log("down")
+  }
+  
+  if(keyPressed == '37')
+  {
+     left();
+     console.log("left")
+  }
+  
+  if(keyPressed == '39')
+  {
+     right();
+     console.log("right")
+  }
+
 if(keyPressed == '70')
 {
    new_image('IronMans_Helmet.png')
@@ -130,7 +180,8 @@ if(keyPressed == '80')
 {
 new_image('thor_right_hand.png');
 console.log("p"); 
-} 
+}
+
 
 
 function up()
@@ -170,29 +221,14 @@ function up()
    new_image();     
  } 
 
-if(keyPressed == '38')
-{
-   up();
-   console.log("up"); 
-}
 
-if(keyPressed == '40')
-{
-   down();
-   console.log("down")
-}
 
-if(keyPressed == '37')
-{
-   left();
-   console.log("left")
-}
 
-if(keyPressed == '39')
-{
-   right();
-   console.log("right")
-}
+
+
+
+
+
 
 
 
