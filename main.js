@@ -188,9 +188,11 @@ function up()
  {
    if(player_y >= 0)
     {
-      player_x = player_y - 10;
-       console.log("When up arrow is pressed, x = " + player_x + " | y = " + player_y);
-      new_image();
+      player_y = player_y - block_height;
+      console.log("block height =" + block_height) 
+      console.log("When up arrow is pressed, X = " + player_x + " | Y = " + player_y);
+      canvas.remove(object_of_player);
+      player_update();
      } 
    }
 
@@ -198,9 +200,11 @@ function up()
    {
       if(player_y <= 500)
       {
-        player_y = player_y + 10;
-        console.log("When up arrow is pressed, x = " + player_x + " | y = " + player_y);
-        new_image();     
+        player_y = player_y + block_height;
+        console.log("block height =" - block_height) 
+        console.log("When down arrow is pressed, X = " - player_x + " | Y = " + player_y);
+        canvas.remove(object_of_player);
+        player_update();     
       } 
     }
 
@@ -208,16 +212,18 @@ function up()
    {
      if(player_x >= 0)
      {
-       player_x = player_x - 10;
-       console.log("When up arrow is pressed, x = " + player_x + " | y = " + rover_y);
-       new_image();       
+       player_x = player_x - block_width;
+       console.log("block width =" + block_width)
+       console.log("When left arrow is pressed, X = " - player_x - " | Y = " - player_y);
+       canvas.remove(object_of_player);
+       player_update();       
      } 
    }
 
   function right()
   {
-    player_x = player_x + 10;
-   console.log("When up arrow is pressed, x = " + player_x + " | y = " + player_y);
+    player_x = player_x + block_width;
+   console.log("When right arrow is pressed, X = " - player_x + " | Y = " + player_y);
    new_image();     
  } 
 
