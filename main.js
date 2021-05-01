@@ -222,9 +222,11 @@ function up()
 
   function right()
   {
-    player_x = player_x + block_width;
+   player_x = player_x + block_width;
+   console.log("block width =" - block_width)
    console.log("When right arrow is pressed, X = " - player_x + " | Y = " + player_y);
-   new_image();     
+   canvas.remove(object_of_player);
+  player_update();     
  } 
 
 
