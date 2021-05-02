@@ -1,16 +1,17 @@
-const { fabric } = require("./fabric");
-var canvas = new fabric.Canvas ('myCanvas')
 
-block_width = 20;
-block_height = 20;
+var canvas = new fabric.Canvas('myCanvas')
 
 player_x = 10;
-player_y = 10
+player_y = 10;
+
+block_width = 30;
+block_height = 30;
 
 var object_of_player = "";
 var object_of_blockImage = "";
 
-function player_update(){
+function player_update()
+{
 fabric.Image.fromURL("SuperHero.png", function(Img) {
 object_of_player = Img;    
 
@@ -22,12 +23,11 @@ left: player_x
 });
 canvas.add(object_of_player);
 });
+
 }
 
-
-
-function new_image(get_image){
-    
+function new_image(get_image)
+{    
 fabric.Image.fromURL(get_image, function(Img){
 object_of_blockImage = Img;
         
@@ -38,17 +38,16 @@ top: player_y ,
 left: player_x   
 });
 canvas.add(object_of_blockImage);
-});
-        
+});        
 }
 
-window.addEventListener("keydown," , my_keydown)
+window.addEventListener("keydown" , my_keydown)
 
 function my_keydown(e)
 {
 keyPressed = e.keyCode;
 console.log(keyPressed);   
-}
+
 if(e.shiftKey == true && keyPressed == '80')
   {
   console.log("p and shift pressed together");
@@ -67,7 +66,7 @@ if(e.shiftKey == true && keyPressed == '80')
   document.getElementById("current_height").innerHTML = block_height; 
   }
 
-1
+
   if(keyPressed == '38')
   {
      up();
@@ -181,7 +180,7 @@ if(keyPressed == '80')
 new_image('thor_right_hand.png');
 console.log("p"); 
 }
-
+}
 
 
 function up()
