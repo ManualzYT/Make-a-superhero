@@ -175,10 +175,22 @@ new_image('thor_left_hand.png');
 console.log("s"); 
 }
 
-if(keyPressed == '80')
+if(keyPressed == '86')
 {
 new_image('thor_right_hand.png');
 console.log("v"); 
+}
+
+if(keyPressed == '89')
+{
+new_image('Earthquake_effect.png');
+console.log("y"); 
+}
+
+if(keyPressed == '88')
+{
+new_image('Lightning_effect.png');
+console.log("x"); 
 }
 }
 
