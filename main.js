@@ -12,7 +12,7 @@ var object_of_blockImage = "";
 
 function player_update()
 {
-fabric.Image.fromURL("SuperHero.png", function(Img) {
+fabric.Image.fromURL("player.png", function(Img) {
 object_of_player = Img;    
 
 object_of_player.scaleToWidth(150);
@@ -48,9 +48,9 @@ function my_keydown(e)
 keyPressed = e.keyCode;
 console.log(keyPressed);   
 
-if(e.shiftKey == true && keyPressed == '80')
+if(e.shiftKey == true && keyPressed == '85')
   {
-  console.log("p and shift pressed together");
+  console.log("u and shift pressed together");
   block_width = block_width + 10;
   block_height = block_height + 10;
   document.getElementById("current_width").innerHTML = block_width;
@@ -178,7 +178,7 @@ console.log("s");
 if(keyPressed == '80')
 {
 new_image('thor_right_hand.png');
-console.log("p"); 
+console.log("v"); 
 }
 }
 
